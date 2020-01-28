@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>java</servlet-name>
+        <servlet-class>Doctor.java</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>InsertDoctor</servlet-name>
+        <servlet-class>controller.InsertDoctor</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Signin</servlet-name>
+        <servlet-class>dao.Signin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InsertDoctor</servlet-name>
+        <url-pattern>/InsertDoctor</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Signin</servlet-name>
+        <url-pattern>/Signin</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
